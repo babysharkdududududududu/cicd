@@ -1,0 +1,11 @@
+name: thanh-say-hello
+on:
+  push:
+    branches: [master]
+
+jobs:
+  docker: #tên job
+    runs-on: ubuntu-latest #config môi trường chạy
+    steps: # các job nhỏ 
+      - name: Checkout
+        uses: actions/checkout@v2
