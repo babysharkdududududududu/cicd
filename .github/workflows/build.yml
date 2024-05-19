@@ -28,7 +28,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicd
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/thanh-say-hello
       
       - name: Verify
         run: echo ${{ steps.docker_build.outputs.digest }}
